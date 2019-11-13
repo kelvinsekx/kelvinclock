@@ -12,11 +12,14 @@ function itsClock(){
     if(todaysDate.getHours() >= 12){
         meridian = 'PM'
         welcome.textContent="Good Afternoon dear"
-    }else if(todaysDate.getHours >= 16){
+    }
+     if(todaysDate.getHours() >= 16){
         welcome.textContent="Good Evening sweetheart"
-    }else if(todaysDate.getHours >= 20){
+    }
+     if(todaysDate.getHours() >= 20){
         welcome.textContent="Good Night Baby"
-    }else{
+    }
+    if(todaysDate.getHours() < 12){
         meridian = 'AM'
         welcome.textContent="Good Morning dear"
     }
